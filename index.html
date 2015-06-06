@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8"/>
-	<title>Mini Line Coming Soon Page</title>
+	<title>Sample Line Coming Soon Page</title>
 	<meta http-equiv="x-ua-compatible" content="ie=edge" />
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
@@ -54,10 +54,10 @@
 	  </div>
 
 	  <div id="progress">
-		<div id="passed">
-		</div>
-		<div id="persentage">
-		</div>
+		  <div id="passed">
+		  </div>
+		  <div id="persentage">
+		  </div>
 	  </div>
 
 	  <div id="ourservice-arrow">
@@ -100,7 +100,7 @@
     <h1>Subscribe</h1>
 	<hr class="short-line">
 	<div class="form-wrapper">
-      <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 	  <form action="#" method="post">
 	    <input id="email" type="text" placeholder="Your e-mail address">
 		<input id="submit" type="submit" value="subscribe">
@@ -123,25 +123,25 @@
 	<div class="inner-wrapper clearfix">
 	  <div id="contact-info">
 	    <div class="address">
-		  <h3><i class="icon-home"></i>Address</h3>
-		  <p>123 street, city</p>
-		  <p>456 street, city</p>
-		</div>
-		<div class="telephone">
-		  <h3><i class="icon-phone"></i>Telephone</h3>
-		  <p>123 456</p>
-		  <p>123456789</p>
-		</div>
-		<div class="email">
-		  <h3><i class="icon-envelope-alt"></i>E-mail</h3>
-		  <p>mini.line@example.com</p>
-		</div>
-		<div class="sns">
-		  <span><i class="icon-twitter"></i></span>
-		  <span><i class="icon-facebook"></i></span>
-		  <span><i class="icon-google-plus"></i></span>
-		  <span><i class="icon-pinterest"></i></span>
-		</div>
+		    <h3><i class="icon-home"></i>Address</h3>
+		    <p>123 street, city</p>
+		    <p>456 street, city</p>
+		  </div>
+		  <div class="telephone">
+		    <h3><i class="icon-phone"></i>Telephone</h3>
+		    <p>123 456</p>
+		    <p>123456789</p>
+		  </div>
+		  <div class="email">
+		    <h3><i class="icon-envelope-alt"></i>E-mail</h3>
+        <p><a href="mailto:sample.line@example.com">sample.line@example.com</a></p>
+		  </div>
+		  <div class="sns">
+        <span><a href="#"><i class="icon-twitter"></i></a></span>
+		    <span><a href="#"><i class="icon-facebook"></i></a></span>
+		    <span><a href="#"><i class="icon-google-plus"></i></a></span>
+		    <span><a href="#"><i class="icon-pinterest"></i></a></span>
+		  </div>
 	  </div>
 
 	  <div id="form-wrapper">
@@ -161,7 +161,7 @@
   <!-- /contact us -->
   <!-- footer -->
   <div id="footer">
-    <p> Copyright &copy; 2015 mini-line</p>
+    <p> Copyright &copy; 2015 sample-line</p>
   </div>
   <!-- /footer -->
 
@@ -170,62 +170,11 @@
   <!-- javascript -->
   <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
-  <script type="text/javascript" src="js/jquery.scrollto.min.js"></script>
+  <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
   <script type="text/javascript" src="js/jquery.easing.min.js"></script>
   <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
   <script type="text/javascript" src="js/responsiveslides.min.js"></script>
-  <script type="text/javascript">
-
-    // progress
-
-    var sStart = '2015/04/27';
-    var sEnd = '2015/06/27';
-    var dStart = new Date(sStart);
-    var dEnd = new Date(sEnd);
-    var total = dEnd-dStart;
-
-    $(document).ready(function() {
-  	  var l = new Date() - dStart;
-  	  var w = l/total*100 + "%";
-  	  $("#passed").animate({width: w}, 3000, "easeInOutQuart");
-  
-  	  $('#countdown').countdown(sEnd, function(event) {
-  		$(this).find("#days").html(event.strftime('%-D'));
-  		$(this).find("#hours").html(event.strftime('%-H'));
-  		$(this).find("#minutes").html(event.strftime('%-M'));
-  		$(this).find("#seconds").html(event.strftime('%-S'));
-  
-  		var left = new Date() - dStart;
-  		var persentage = Math.max(0, left / total * 100);
-  		$("#persentage").html(persentage.toFixed() + '%');
-  		
-  	  });
-
-	  // scroll buttons
-
-  	  $("#ourservice-arrow .inner-wrapper").click(function() {
-  		$(document).scrollTo("#ourservice", 1000, {easing: "easeInOutQuad"});
-  	  });
-
-  	  $("#subscribe-button").click(function() {
-  		$(document).scrollTo("#subscribe", 1000, {easing: "easeInOutQuad"});
-  	  });
-
-  	  $("#contact-button").click(function() {
-  		$(document).scrollTo("#contactus", 1000, {easing: "easeInOutQuad"});
-  	  });
-
-  	  $("#home-button").click(function() {
-  		$(document).scrollTo(0, 1000, {easing: "easeInOutQuad"});
-  	  });
-
-	  // slider
-	 $("#backpics").responsiveSlides({
-        speed: 2000,
-		timeout: 5000
-      });
-    });
-  </script>
+  <script type="text/javascript" src="js/main.js"></script>
   <!-- /javascript -->
 </body>
 </html>

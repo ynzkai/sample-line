@@ -6,8 +6,7 @@
 html, body { height: 100%; }
 
 body {
-	font-family: Helvetica, Arial;
-	background: url(../images/back5.jpg);
+	font-family: Helvetica, Arial, sans-serif;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
@@ -84,7 +83,7 @@ body {
 }
 
 .logo span {
-	font-family: 'Stencil Std', sans-serif;
+	font-family: Helvetica, arial, sans-serif;
 	font-size: 2.5em;
 	color: #ddd;
 	text-shadow: 0 0 5px #999;
@@ -228,6 +227,30 @@ body {
 	100% { top: 5px; }
 }
 
+@-webkit-keyframes arrow_down {
+	0% { top: -5px; }
+	30% { top: -5px; }
+	100% { top: 5px; }
+}
+
+@-moz-keyframes arrow_down {
+	0% { top: -5px; }
+	30% { top: -5px; }
+	100% { top: 5px; }
+}
+
+@-ms-keyframes arrow_down {
+	0% { top: -5px; }
+	30% { top: -5px; }
+	100% { top: 5px; }
+}
+
+@-o-keyframes arrow_down {
+	0% { top: -5px; }
+	30% { top: -5px; }
+	100% { top: 5px; }
+}
+
 #ourservice-arrow:hover .desc {
 	top: 0;
 	opacity: 1;
@@ -308,6 +331,17 @@ body {
 	-moz-border-radius: 999px;
 	-ms-border-radius: 999px;
 	-o-border-radius: 999px;
+	transition: 1s;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-ms-transition: 1s;
+	-o-transition: 1s;
+}
+
+#contactus #home-button:hover,
+#subscribe #contact-button:hover,
+#ourservice #subscribe-button:hover {
+	background-color: #cd8;
 }
 
 /* subscribe */
@@ -375,6 +409,11 @@ body {
 	-moz-border-radius: 999px;
 	-ms-border-radius: 999px;
 	-o-border-radius: 999px;
+	transition: 1s;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-ms-transition: 1s;
+	-o-transition: 1s;
 }
 
 #subscribe .form-wrapper #submit:hover {
@@ -396,13 +435,13 @@ body {
 #contactus {
 	padding: 10px;
 	background-color: #222;
+	color: #999;
 }
 
 #contactus h1 {
 	text-align: center;
 	font-size: 2em;
 	margin-top: 30px;
-	color: #999;
 	text-shadow: 0 3px 5px #555;
 }
 
@@ -421,12 +460,13 @@ body {
 #contactus #form-wrapper textarea {
 	width: 100%;
 	height: 40px;
-	line-height: 40px;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 1.5em;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.2em;
+	color: #555;
 	margin: 20px auto;
 	border-width: 0;
 	padding: 5px 10px;
+	background-color: #555;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-ms-box-sizing: border-box;
@@ -439,15 +479,25 @@ body {
 }
 
 #contactus #form-wrapper input#submit {
-	font-family: Helvetica, Arial;
+	font-family: Helvetica, Arial, sans-serif;
 	font-size: 1em;
 	background-color: #cd8;
+}
+
+#contactus #form-wrapper input:focus,
+#contactus #form-wrapper textarea:focus {
+	background-color: #ddd;
 }
 
 #contactus #form-wrapper input#submit:hover {
 	cursor: pointer;
 	background-color: #9a5;
 	color: #ddd;
+	transition: 1s;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-ms-transition: 1s;
+	-o-transition: 1s;
 }
 
 #contactus #contact-info {
@@ -463,20 +513,52 @@ body {
 
 #contactus #contact-info > * {
 	margin: 20px 50px 20px;
-	font-family: Helvetica, Arial;
+	font-family: Helvetica, Arial, sans-serif;
 	font-size: 1.1em;
 	letter-spacing: 1px;
-	color: #555;
 	line-height: 1.5;
+	color: #555;
 }
 
-#contactus #contact-info .sns h3 {
-	font-size: 1em;
+#contactus #contact-info h3 i {
+	margin-right: 10px;
+}
+
+#contactus #contact-info p {
+	margin-left: 30px;
+}
+
+#contactus #contact-info a:link,
+#contactus #contact-info a:active,
+#contactus #contact-info a {
+	color: #555;
+	text-decoration: none;
+}
+
+#contactus #contact-info a:hover {
+	color: #999;
 }
 
 #contactus #contact-info .sns span {
 	font-size: 1.8em;
-	margin: 10px;
+	margin: 30px 10px 20px;
+}
+
+#contactus #contact-info .sns span a {
+	transition: 1s;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-ms-transition: 1s;
+	-o-transition: 1s;
+}
+
+#contactus #contact-info .sns span a:hover {
+	color: #9a5;
+	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
 }
 
 /* footer */
