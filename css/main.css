@@ -48,7 +48,7 @@ body {
 /* facepage */
 
 .facepage {
-	background-color: rgba(25, 25, 25, 0.7);
+	background-color: rgba(0, 0, 0, 0.8);
 	padding-top: 120px;
 }
 
@@ -99,7 +99,7 @@ body {
 
 .banner h1 {
 	//font-family: "Stencil Std";
-	color: #9a5;
+	color: #cd8;
 	font-size: 3em;
 	margin-bottom: 10px;
 	letter-spacing: 2px;
@@ -117,7 +117,7 @@ body {
 
 .banner p {
 	font-size: 1em;
-	color: #999;
+	color: #ccc;
 	letter-spacing: 1px;
 	animation-delay: 500ms;
 }
@@ -137,7 +137,7 @@ body {
 }
 
 #countdown .number {
-	color: #bbb;
+	color: #ddd;
 	line-height: 50px;
 	font-size: 4em;
 }
@@ -145,7 +145,7 @@ body {
 #countdown .desc {
 	margin-top: 10px;
 	font-size: 1em;
-	color: #999;
+	color: #ccc;
 }
 
 /* progress */
@@ -154,7 +154,7 @@ body {
 	height: 10px;
 	margin: 10px auto;
 	position: relative;
-	background-color: rgba(120,120,120, 0.3);
+	background-color: rgba(204,204,204, 0.3);
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-ms-border-radius: 5px;
@@ -168,7 +168,7 @@ body {
 	-ms-border-radius: 5px;
 	-moz-border-radius: 5px;
 	-o-border-radius: 5px;
-	background-color: rgba(153,170,95, 0.7);
+	background-color: rgba(204,221,128, 0.7);
 	height: 100%;
 	width: 0;
 }
@@ -176,7 +176,7 @@ body {
 #progress #persentage {
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 1.5em;
-	color: #999;
+	color: #eee;
 	text-align: center;
 	width: 50px;
 	height: 50px;
@@ -331,24 +331,25 @@ body {
 	-moz-border-radius: 999px;
 	-ms-border-radius: 999px;
 	-o-border-radius: 999px;
-	transition: 1s;
-	-webkit-transition: 1s;
-	-moz-transition: 1s;
-	-ms-transition: 1s;
-	-o-transition: 1s;
+	transition: 500ms;
+	-webkit-transition: 500ms;
+	-moz-transition: 500ms;
+	-ms-transition: 500ms;
+	-o-transition: 500ms;
 }
 
 #contactus #home-button:hover,
 #subscribe #contact-button:hover,
 #ourservice #subscribe-button:hover {
 	background-color: #cd8;
+	border: 1px solid #cd8;
 }
 
 /* subscribe */
 
 #subscribe {
 	padding: 50px 0;
-	background-color: #ddd;
+	background-color: #f8f8f8;
 }
 
 #subscribe h1 {
@@ -380,7 +381,7 @@ body {
 	width: 100%;
 	height: 40px;
 	overflow: hidden;
-	background: #eee;
+	background: #fff;
 }
 
 #subscribe .form-wrapper #email {
@@ -390,7 +391,6 @@ body {
 	font-size: 1.2em;
 	line-height: 2;
 	border-width: 0;
-	background: transparent;
 	padding-left: 15px;
 	box-sizing: border-box;
 	float: left;
@@ -404,21 +404,20 @@ body {
 	background-color: #cd8;
 	border-radius: 999px;
 	color: #555;
-	font-size: 1.1em;
+	font-size: 1em;
 	-webkit-border-radius: 999px;
 	-moz-border-radius: 999px;
 	-ms-border-radius: 999px;
 	-o-border-radius: 999px;
-	transition: 1s;
-	-webkit-transition: 1s;
-	-moz-transition: 1s;
-	-ms-transition: 1s;
-	-o-transition: 1s;
+	transition: 300ms;
+	-webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	-ms-transition: 300ms;
+	-o-transition: 300ms;
 }
 
 #subscribe .form-wrapper #submit:hover {
 	background-color: #9a5;
-	color: #ddd;
 	cursor: pointer;
 }
 
@@ -434,8 +433,8 @@ body {
 
 #contactus {
 	padding: 10px;
-	background-color: #222;
-	color: #999;
+	background-color: #333;
+	color: #ccc;
 }
 
 #contactus h1 {
@@ -481,7 +480,7 @@ body {
 #contactus #form-wrapper input#submit {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 1em;
-	background-color: #cd8;
+	background-color: #ddd;
 }
 
 #contactus #form-wrapper input:focus,
@@ -491,13 +490,13 @@ body {
 
 #contactus #form-wrapper input#submit:hover {
 	cursor: pointer;
-	background-color: #9a5;
-	color: #ddd;
-	transition: 1s;
-	-webkit-transition: 1s;
-	-moz-transition: 1s;
-	-ms-transition: 1s;
-	-o-transition: 1s;
+	background-color: #cd8;
+	color: #555;
+	transition: 500ms;
+	-webkit-transition: 500ms;
+	-moz-transition: 500ms;
+	-ms-transition: 500ms;
+	-o-transition: 500ms;
 }
 
 #contactus #contact-info {
@@ -517,7 +516,7 @@ body {
 	font-size: 1.1em;
 	letter-spacing: 1px;
 	line-height: 1.5;
-	color: #555;
+	color: #999;
 }
 
 #contactus #contact-info h3 i {
@@ -531,20 +530,30 @@ body {
 #contactus #contact-info a:link,
 #contactus #contact-info a:active,
 #contactus #contact-info a {
-	color: #555;
+	color: #999;
 	text-decoration: none;
 }
 
 #contactus #contact-info a:hover {
-	color: #999;
+	color: #ccc;
 }
 
 #contactus #contact-info .sns span {
 	font-size: 1.8em;
-	margin: 30px 10px 20px;
+	margin: 20px 10px;
+	float: left;
+	display: block;
+	width: 40px;
+	height: 40px;
 }
 
 #contactus #contact-info .sns span a {
+	display: block;
+	height: 100%;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 999px;
+	border: 1px solid #999;
 	transition: 1s;
 	-webkit-transition: 1s;
 	-moz-transition: 1s;
@@ -554,11 +563,11 @@ body {
 
 #contactus #contact-info .sns span a:hover {
 	color: #9a5;
-	transform: rotate(360deg);
-	-webkit-transform: rotate(360deg);
-	-moz-transform: rotate(360deg);
-	-ms-transform: rotate(360deg);
-	-o-transform: rotate(360deg);
+	border: 1px solid #9a5;
+	-webkit-border-radius: 999px;
+	-moz-border-radius: 999px;
+	-ms-border-radius: 999px;
+	-o-border-radius: 999px;
 }
 
 /* footer */
