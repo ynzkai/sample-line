@@ -19,6 +19,34 @@ body {
 	visibility: hidden;
 }
 
+::-webkit-input-placeholder { /* WebKit browsers */
+	font-size: 16px;
+	line-height: 1.5;
+	font-style: italic;
+	letter-spacing: 1px;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	font-size: 16px;
+	line-height: 1.5;
+	font-style: italic;
+	letter-spacing: 1px;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+	font-size: 16px;
+	line-height: 1.5;
+	font-style: italic;
+	letter-spacing: 1px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+	font-size: 16px;
+	line-height: 1.5;
+	font-style: italic;
+	letter-spacing: 1px;
+}
+
 /* layout */
 
 .wrapper {
@@ -117,7 +145,7 @@ body {
 
 .banner p {
 	font-size: 1em;
-	color: #ccc;
+	color: #999;
 	letter-spacing: 1px;
 	animation-delay: 500ms;
 }
@@ -137,7 +165,7 @@ body {
 }
 
 #countdown .number {
-	color: #ddd;
+	color: #aaa;
 	line-height: 50px;
 	font-size: 4em;
 }
@@ -145,7 +173,7 @@ body {
 #countdown .desc {
 	margin-top: 10px;
 	font-size: 1em;
-	color: #ccc;
+	color: #666;
 }
 
 /* progress */
@@ -176,7 +204,7 @@ body {
 #progress #persentage {
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 1.5em;
-	color: #eee;
+	color: #666;
 	text-align: center;
 	width: 50px;
 	height: 50px;
@@ -187,7 +215,7 @@ body {
 
 #ourservice-arrow {
 	width: 100%;
-	color: #999;
+	color: #777;
 	position: absolute;
 	bottom: 0;
 	text-align: center;
@@ -331,18 +359,18 @@ body {
 	-moz-border-radius: 999px;
 	-ms-border-radius: 999px;
 	-o-border-radius: 999px;
-	transition: 500ms;
-	-webkit-transition: 500ms;
-	-moz-transition: 500ms;
-	-ms-transition: 500ms;
-	-o-transition: 500ms;
+	transition: 100ms;
+	-webkit-transition: 100ms;
+	-moz-transition: 100ms;
+	-ms-transition: 100ms;
+	-o-transition: 100ms;
 }
 
 #contactus #home-button:hover,
 #subscribe #contact-button:hover,
 #ourservice #subscribe-button:hover {
 	background-color: #cd8;
-	border: 1px solid #cd8;
+	border: 0px solid #cd8;
 }
 
 /* subscribe */
@@ -356,7 +384,7 @@ body {
 	text-align: center;
 	font-size: 2em;
 	color: #555;
-	text-shadow: 0 3px 5px #999;
+	text-shadow: 0 2px 3px #999;
 }
 
 #subscribe .form-wrapper {
@@ -389,7 +417,6 @@ body {
 	width: 80%;
 	height: 40px;
 	font-size: 1.2em;
-	line-height: 2;
 	border-width: 0;
 	padding-left: 15px;
 	box-sizing: border-box;
@@ -409,11 +436,11 @@ body {
 	-moz-border-radius: 999px;
 	-ms-border-radius: 999px;
 	-o-border-radius: 999px;
-	transition: 300ms;
-	-webkit-transition: 300ms;
-	-moz-transition: 300ms;
-	-ms-transition: 300ms;
-	-o-transition: 300ms;
+	transition: 100ms;
+	-webkit-transition: 100ms;
+	-moz-transition: 100ms;
+	-ms-transition: 100ms;
+	-o-transition: 100ms;
 }
 
 #subscribe .form-wrapper #submit:hover {
@@ -434,14 +461,14 @@ body {
 #contactus {
 	padding: 10px;
 	background-color: #333;
-	color: #ccc;
 }
 
 #contactus h1 {
+	color: #ccc;
 	text-align: center;
 	font-size: 2em;
 	margin-top: 30px;
-	text-shadow: 0 3px 5px #555;
+	text-shadow: 0 2px 3px #555;
 }
 
 #contactus #form-wrapper {
@@ -460,43 +487,42 @@ body {
 	width: 100%;
 	height: 40px;
 	font-family: Helvetica, Arial, sans-serif;
-	font-size: 1.2em;
-	color: #555;
+	font-size: 1em;
+	color: #ccc;
 	margin: 20px auto;
-	border-width: 0;
+	border: 1px solid #555;
 	padding: 5px 10px;
-	background-color: #555;
+	background-color: #333;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
+	transition: 500ms;
+	-webkit-transition: 500ms;
+	-moz-transition: 500ms;
+	-ms-transition: 500ms;
+	-o-transition: 500ms;
 }
 
 #contactus #form-wrapper textarea {
 	height: 100px;
 }
 
+#contactus #form-wrapper input:focus,
+#contactus #form-wrapper textarea:focus {
+	background-color: #555;
+}
+
 #contactus #form-wrapper input#submit {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 1em;
-	background-color: #ddd;
-}
-
-#contactus #form-wrapper input:focus,
-#contactus #form-wrapper textarea:focus {
-	background-color: #ddd;
+	color: #999;
 }
 
 #contactus #form-wrapper input#submit:hover {
 	cursor: pointer;
-	background-color: #cd8;
-	color: #555;
-	transition: 500ms;
-	-webkit-transition: 500ms;
-	-moz-transition: 500ms;
-	-ms-transition: 500ms;
-	-o-transition: 500ms;
+	background-color: #555;
 }
 
 #contactus #contact-info {
@@ -513,14 +539,20 @@ body {
 #contactus #contact-info > * {
 	margin: 20px 50px 20px;
 	font-family: Helvetica, Arial, sans-serif;
-	font-size: 1.1em;
 	letter-spacing: 1px;
 	line-height: 1.5;
 	color: #999;
 }
 
+#contactus #contact-info h3 {
+	font-size: 0.95em;
+}
+
 #contactus #contact-info h3 i {
-	margin-right: 10px;
+	display: block;
+	float: left;
+	width: 30px;
+	font-size: 1.5em;
 }
 
 #contactus #contact-info p {
@@ -540,7 +572,7 @@ body {
 
 #contactus #contact-info .sns span {
 	font-size: 1.8em;
-	margin: 20px 10px;
+	margin: 40px 10px;
 	float: left;
 	display: block;
 	width: 40px;
@@ -554,27 +586,23 @@ body {
 	text-align: center;
 	border-radius: 999px;
 	border: 1px solid #999;
-	transition: 1s;
-	-webkit-transition: 1s;
-	-moz-transition: 1s;
-	-ms-transition: 1s;
-	-o-transition: 1s;
+	transition: 100ms;
+	-webkit-transition: 100ms;
+	-moz-transition: 100ms;
+	-ms-transition: 100ms;
+	-o-transition: 100ms;
 }
 
 #contactus #contact-info .sns span a:hover {
-	color: #9a5;
-	border: 1px solid #9a5;
-	-webkit-border-radius: 999px;
-	-moz-border-radius: 999px;
-	-ms-border-radius: 999px;
-	-o-border-radius: 999px;
+	color: #cd8;
+	background-color: #999;
 }
 
 /* footer */
 
 #footer {
-	background-color: #333;
+	background-color: #999;
 	text-align: center;
 	padding: 50px 0;
-	color: #555;
+	color: #444;
 }
