@@ -76,7 +76,7 @@ body {
 /* facepage */
 
 .facepage {
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(255, 255, 255, 0.8);
 	padding-top: 120px;
 }
 
@@ -112,9 +112,8 @@ body {
 
 .logo span {
 	font-family: Helvetica, arial, sans-serif;
-	font-size: 2.5em;
+	font-size: 2em;
 	color: #ddd;
-	text-shadow: 0 0 5px #999;
 	letter-spacing: 2px;
 }
 
@@ -127,8 +126,8 @@ body {
 
 .banner h1 {
 	//font-family: "Stencil Std";
-	color: #cd8;
-	font-size: 3em;
+	color: #999;
+	font-size: 2em;
 	margin-bottom: 10px;
 	letter-spacing: 2px;
 	animation-duration: 1500ms;
@@ -141,6 +140,10 @@ body {
 	-moz-animation-delay: 500ms;
 	-ms-animation-delay: 500ms;
 	-o-animation-delay: 500ms;
+}
+
+.banner h1 span {
+	color: #cd8;
 }
 
 .banner p {
@@ -182,7 +185,7 @@ body {
 	height: 10px;
 	margin: 10px auto;
 	position: relative;
-	background-color: rgba(204,204,204, 0.3);
+	background-color: rgba(125,125,125, 0.3);
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-ms-border-radius: 5px;
@@ -211,9 +214,9 @@ body {
 	margin: 0 auto;
 }
 
-/* ourservice arrow */
+/* about arrow */
 
-#ourservice-arrow {
+#about-arrow {
 	width: 100%;
 	color: #777;
 	position: absolute;
@@ -222,13 +225,13 @@ body {
 	overflow: hidden;
 }
 
-#ourservice-arrow .inner-wrapper {
+#about-arrow .inner-wrapper {
 	width: 100px;
 	margin: 0 auto;
 	cursor: pointer;
 }
 
-#ourservice-arrow .inner-wrapper .desc {
+#about-arrow .inner-wrapper .desc {
 	position: relative;
 	top: 30px;
 	opacity: 0;
@@ -239,7 +242,7 @@ body {
 	-o-transition: 400ms ease-in-out;
 }
 
-#ourservice-arrow .inner-wrapper i {
+#about-arrow .inner-wrapper i {
 	font-size: 1.2em;
 	position: relative;
 	animation: arrow_down 1s linear infinite alternate;
@@ -279,31 +282,31 @@ body {
 	100% { top: 5px; }
 }
 
-#ourservice-arrow:hover .desc {
+#about-arrow:hover .desc {
 	top: 0;
 	opacity: 1;
 }
 
-/* ourservice */
+/* about */
 
-#ourservice {
+#about {
 	background-color: #fff;
 	padding: 50px 0;
 }
 
-#ourservice h1 {
+#about h1 {
 	color: #555;
 	font-size: 2em;
 	text-align: center;
 	text-shadow: 0 3px 5px #ccc;
 }
 
-#ourservice .services {
+#about .items {
 	width: 90%;
 	margin: 0 auto;
 }
 
-#ourservice .services .service {
+#about .items .item {
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-ms-box-sizing: border-box;
@@ -314,7 +317,8 @@ body {
 	float: left;
 }
 
-#ourservice .services .service img {
+#about .items .item i,
+#about .items .item img {
 	border-radius: 999px;
 	-webkit-border-radius: 999px;
 	-moz-border-radius: 999px;
@@ -323,19 +327,23 @@ body {
 	display: block;
 	width: 250px;
 	height: 250px;
+	line-height: 250px;
+	text-align: center;
 	margin: 30px auto;
-	box-shadow: 0 3px 5px #bbb;
+	font-size: 8em;
+	color: #cf8;
+	background-color: #eee;
+	border: 1px solid #ddd;
 }
 
-#ourservice .services .service h2 {
+#about .items .item h2 {
 	color: #555;
 	font-size: 1.2em;
 	text-align: center;
 	margin-bottom: 20px;
-	text-shadow: 0 3px 5px #ccc;
 }
 
-#ourservice .services .service p {
+#about .items .item p {
 	color: #555;
 	line-height: 1.5;
 	padding: 0 30px;
@@ -345,13 +353,14 @@ body {
 
 #contactus #home-button,
 #subscribe #contact-button,
-#ourservice #subscribe-button {
+#about #subscribe-button {
 	width: 100px;
 	margin: 50px auto 20px;
 	padding: 10px 20px;
-	border: 1px solid #555;
+	border: 1px solid #777;
+	letter-spacing: 1px;
 	color: #555;
-	font-size: 1.2em;
+	font-size: 1em;
 	text-align: center;
 	cursor: pointer;
 	border-radius: 999px;
@@ -359,18 +368,18 @@ body {
 	-moz-border-radius: 999px;
 	-ms-border-radius: 999px;
 	-o-border-radius: 999px;
-	transition: 100ms;
-	-webkit-transition: 100ms;
-	-moz-transition: 100ms;
-	-ms-transition: 100ms;
-	-o-transition: 100ms;
+	transition: 500ms;
+	-webkit-transition: 500ms;
+	-moz-transition: 500ms;
+	-ms-transition: 500ms;
+	-o-transition: 500ms;
 }
 
 #contactus #home-button:hover,
 #subscribe #contact-button:hover,
-#ourservice #subscribe-button:hover {
+#about #subscribe-button:hover {
 	background-color: #cd8;
-	border: 0px solid #cd8;
+	border: 1px solid #cd8;
 }
 
 /* subscribe */
@@ -428,10 +437,11 @@ body {
 	height: 40px;
 	float: right;
 	border-width: 0;
-	background-color: #cd8;
+	background-color: #efa;
 	border-radius: 999px;
 	color: #555;
 	font-size: 1em;
+	letter-spacing: 1px;
 	-webkit-border-radius: 999px;
 	-moz-border-radius: 999px;
 	-ms-border-radius: 999px;
@@ -533,15 +543,15 @@ body {
 	-o-box-sizing: border-box;
 	width: 40%;
 	float: left;
-	padding: 30px;
+	padding: 50px 0 50px 100px;
 }
 
 #contactus #contact-info > * {
-	margin: 20px 50px 20px;
 	font-family: Helvetica, Arial, sans-serif;
 	letter-spacing: 1px;
 	line-height: 1.5;
 	color: #999;
+	margin-top: 20px;
 }
 
 #contactus #contact-info h3 {
@@ -549,13 +559,12 @@ body {
 }
 
 #contactus #contact-info h3 i {
-	display: block;
-	float: left;
 	width: 30px;
+	margin-right: 10px;
 	font-size: 1.5em;
 }
 
-#contactus #contact-info p {
+#contactus #contact-info .detail {
 	margin-left: 30px;
 }
 
@@ -570,22 +579,25 @@ body {
 	color: #ccc;
 }
 
+#contactus #contact-info .sns {
+	margin: 40px 0 40px 30px;
+}
+
 #contactus #contact-info .sns span {
-	font-size: 1.8em;
-	margin: 40px 10px;
+	margin: 0 5px;
 	float: left;
 	display: block;
-	width: 40px;
-	height: 40px;
+	width: 35px;
+	height: 35px;
 }
 
 #contactus #contact-info .sns span a {
 	display: block;
 	height: 100%;
-	line-height: 40px;
+	line-height: 35px;
 	text-align: center;
-	border-radius: 999px;
 	border: 1px solid #999;
+	font-size: 20px;
 	transition: 100ms;
 	-webkit-transition: 100ms;
 	-moz-transition: 100ms;

@@ -1,38 +1,57 @@
 .logo span {
-	color: #888;
+	color: #777;
 }
 
 .banner h1 {
+	color: #777;
+}
+
+.banner h1 span {
 	color: #cd8;
+}
+
+.banner p {
+	color: #999;
 }
 
 #countdown .number {
 	color: #777;
 }
 
+#about .items .item i,
+#about .items .item img {
+	color: #cf8;
+	background-color: #f8f8f8;
+	border: 1px solid #eee;
+}
+
+#about .items .item h2 {
+	color: #555;
+}
+
 #progress #passed {
 	background-color: rgba(204,221,128, 0.7);
 }
 
-#ourservice h1 {
+#about h1 {
 	color: #555;
 }
 
-#ourservice .services .service h2 {
+#about .services .service h2 {
 	color: #555;
 }
 
 #contactus #home-button,
 #subscribe #contact-button,
-#ourservice #subscribe-button {
+#about #subscribe-button {
 	color: #555;
 }
 
 #contactus #home-button:hover,
 #subscribe #contact-button:hover,
-#ourservice #subscribe-button:hover {
-	background-color: #cd8;
-	border: 1px solid #cd8;
+#about #subscribe-button:hover {
+	background-color: #dfa;
+	border: 1px solid #dfa;
 }
 
 #subscribe h1 {
@@ -40,12 +59,12 @@
 }
 
 #subscribe .form-wrapper #submit {
-	background-color: #cd8;
+	background-color: #dfa;
 	color: #555;
 }
 
 #subscribe .form-wrapper #submit:hover {
-	background-color: #de9;
+	background-color: #ce9;
 }
 
 #contactus h1 {
@@ -53,6 +72,6 @@
 }
 
 #contactus #contact-info .sns span a:hover {
-	color: #cd8;
+	color: #dfa;
 	background-color: #999;
 }

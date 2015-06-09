@@ -25,8 +25,8 @@ $(document).ready(function() {
 
   // scroll buttons
 
-$("#ourservice-arrow .inner-wrapper").click(function() {
-	$(document).scrollTo("#ourservice", 1000, {easing: "easeInOutQuad"});
+$("#about-arrow .inner-wrapper").click(function() {
+	$(document).scrollTo("#about", 1000, {easing: "easeInOutQuad"});
 });
 
 $("#subscribe-button").click(function() {
