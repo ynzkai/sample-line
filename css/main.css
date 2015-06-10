@@ -291,7 +291,7 @@ body {
 
 #about {
 	background-color: #fff;
-	padding: 50px 0;
+	padding: 50px 30px;
 }
 
 #about h1 {
@@ -402,12 +402,20 @@ body {
 }
 
 #subscribe .form-wrapper .desc {
-	margin: 50px auto;
+	margin: 50px auto 10px;
 	font-size: 1.2em;
 	color: #555;
 }
 
-#subscribe .form-wrapper form {
+#subscribe .form-wrapper form label {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 20px;
+	color: #e66;
+}
+
+#subscribe .form-wrapper .inner-wrapper {
 	border: 1px solid #ccc;
 	border-radius: 999px;
 	-webkit-border-radius: 999px;
@@ -492,6 +500,13 @@ body {
 	padding: 30px 50px;
 }
 
+#contactus #form-wrapper label {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	color: #e66;
+}
+
 #contactus #form-wrapper input,
 #contactus #form-wrapper textarea {
 	width: 100%;
@@ -499,7 +514,7 @@ body {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 1em;
 	color: #ccc;
-	margin: 20px auto;
+	margin: 0px auto;
 	border: 1px solid #555;
 	padding: 5px 10px;
 	background-color: #333;
@@ -527,6 +542,7 @@ body {
 #contactus #form-wrapper input#submit {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 1em;
+	margin-top: 35px;
 	color: #999;
 }
 

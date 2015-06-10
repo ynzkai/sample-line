@@ -1,7 +1,6 @@
 @media screen and (min-width: 769px) and (max-width: 992px) {
 	#countdown .number {
 		font-size: 3.5em;
-		color: blue;
 	}
 
 	.banner h1 {
@@ -34,21 +33,104 @@
 	}
 
 	#contactus #contact-info {
-		padding: 30px 0;
+		padding: 30px;
 	}
 }
 
 @media screen and (max-width: 768px) {
+	.facepage {
+		padding-top: 60px;
+	}
+
+	.logo img {
+		width: 30px;
+		height: 30px;
+	}
+
+	.logo span {
+		font-size: 1.5em;
+	}
+
+	.container {
+		width: 80%;
+	}
+
 	#countdown .number {
-		color: red;
+		font-size: 3em;
+	}
+
+	#countdown .desc {
+		font-size: .8em;
+	}
+
+	#progress #persentage {
+		font-size: 1.2em;
+	}
+
+	.banner h1 {
+		font-size: 1.5em;
+	}
+
+	#about .items {
+		width: 100%;
+	}
+
+	#about .items .item {
+		width: 100%;
+		margin-bottom: 20px;
 	}
 
 	#about .items .item i,
 	#about .items .item img {
-		width: 200px;
-		height: 200px;
-		color: red;
+		width: 250px;
+		height: 250px;
+		line-height: 250px;
+		font-size: 8em;
+
 	}
 
+	#subscribe .more-info,
+	#subscribe .form-wrapper {
+		width: 80%;
+	}
+
+	#contactus #form-wrapper {
+		padding: 30px 20px;
+		width: 100%;
+	}
+
+	#contactus #contact-info {
+		padding: 30px;
+		width: 100%;
+	}
+
+	#contactus #contact-info > *{
+		width: 200px;
+		margin: 30px auto;
+	}
+
+	#contactus #contact-info .sns {
+		width: 200px;
+		margin: 30px auto;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+	#subscribe .form-wrapper #email {
+		width: 60%;
+	}
+
+	#subscribe .form-wrapper #submit {
+		width: 40%;
+	}
+
+	#countdown .number {
+		font-size: 2.5em;
+	}
+
+	#progress #persentage {
+		font-size: 1em;
+	}
 }
 

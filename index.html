@@ -106,9 +106,12 @@
 	<hr class="short-line">
 	<div class="form-wrapper">
     <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-	  <form action="#" method="post">
-	    <input id="email" type="text" placeholder="Your e-mail address">
-		<input id="submit" type="submit" value="subscribe">
+	  <form id="subscribeForm" action="" method="post">
+	    <label for="email"></label>
+		<div class="inner-wrapper">
+	      <input id="email" name="email" type="text" required placeholder="Your e-mail address">
+		  <input id="submit" type="submit" value="subscribe">
+		</div>
 	  </form>
 	</div>
 	<div class="more-info">
@@ -126,6 +129,19 @@
     <h1>Contact Us</h1>
 	<hr class="short-line">
 	<div class="inner-wrapper clearfix">
+
+	  <div id="form-wrapper">
+	    <form id="contactForm" action="" method="post">
+		  <label for="name"></label>
+		  <input id="name" name="name" type="text" required placeholder="Your name">
+		  <label for="email"></label>
+		  <input id="email" name="email" type="text" required placeholder="Your e-mail">
+		  <label for="message"></label>
+		  <textarea id="message" name="message" required placeholder="Your message"></textarea>
+		  <input id="submit" type="submit" value="submit">
+		</form>
+	  </div>
+
 	  <div id="contact-info">
 	    <div class="address">
 		  <h3><i class="icon-map-marker"></i>Address</h3>
@@ -148,21 +164,13 @@
 		  </div>
 		</div>
 		<div class="sns">
-          <span><a href="#"><i class="icon-twitter"></i></a></span>
-		  <span><a href="#"><i class="icon-facebook"></i></a></span>
-		  <span><a href="#"><i class="icon-google-plus"></i></a></span>
-		  <span><a href="#"><i class="icon-pinterest"></i></a></span>
+          <span><a href=""><i class="icon-twitter"></i></a></span>
+		  <span><a href=""><i class="icon-facebook"></i></a></span>
+		  <span><a href=""><i class="icon-google-plus"></i></a></span>
+		  <span><a href=""><i class="icon-pinterest"></i></a></span>
 		</div>
 	  </div>
 
-	  <div id="form-wrapper">
-	    <form action="#" method="post">
-		  <input id="name" type="text" placeholder="Your name">
-		  <input id="email" type="text" placeholder="Your e-mail">
-		  <textarea id="message" placeholder="Your message"></textarea>
-		  <input id="submit" type="submit" value="submit">
-		</form>
-	  </div>
 	</div>
 
 	<div id="home-button">
@@ -184,6 +192,7 @@
   <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
   <script type="text/javascript" src="js/jquery.easing.min.js"></script>
   <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+  <script type="text/javascript" src="js/jquery.validate.min.js"></script>
   <script type="text/javascript" src="js/responsiveslides.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
   <!-- /javascript -->

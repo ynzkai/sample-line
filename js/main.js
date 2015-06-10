@@ -23,24 +23,70 @@ $(document).ready(function() {
 	
   });
 
+  // validate contact form
+  var contact_validator = $("#contactForm").validate({
+	errorPlacement: function(error, element) {
+	// Append error within linked label
+	$(element).closest("form")
+	  .find("label[for='" + element.attr("id") + "']")
+		.append(error);
+	},
+	errorElement: "span",
+	messages: {
+	  name: {
+	  	required: " Please leave your name."
+	  },
+	  email: {
+	  	required: " Please leave your e-mail."
+	  },
+	  message: {
+	  	required: " Please leave a message."
+	  }
+	}
+  });
+
+  // validate subscribe form
+  var sub_validator = $("#subscribeForm").validate({
+	errorPlacement: function(error, element) {
+	// Append error within linked label
+	$(element).closest("form")
+	  .find("label[for='" + element.attr("id") + "']")
+		.append(error);
+	},
+	errorElement: "span",
+	messages: {
+	  email: {
+	  	required: " We need your email address to notify you."
+	  }
+	}
+  });
+
+  // nicescroll
+  $("html, #message").niceScroll({
+	cursorwidth: "10px",
+	cursorcolor:"#999",
+	cursorborder: "0px",
+	cursoropacitymax: 0.5
+  });
+
   // scroll buttons
 
-$("#about-arrow .inner-wrapper").click(function() {
-	$(document).scrollTo("#about", 1000, {easing: "easeInOutQuad"});
-});
-
-$("#subscribe-button").click(function() {
-	$(document).scrollTo("#subscribe", 1000, {easing: "easeInOutQuad"});
-});
-
-$("#contact-button").click(function() {
-	$(document).scrollTo("#contactus", 1000, {easing: "easeInOutQuad"});
-});
-
-$("#home-button").click(function() {
-	$(document).scrollTo(0, 1000, {easing: "easeInOutQuad"});
-});
-
+  $("#about-arrow .inner-wrapper").click(function() {
+  	$(document).scrollTo("#about", 1000, {easing: "easeInOutQuad"});
+  });
+  
+  $("#subscribe-button").click(function() {
+  	$(document).scrollTo("#subscribe", 1000, {easing: "easeInOutQuad"});
+  });
+  
+  $("#contact-button").click(function() {
+  	$(document).scrollTo("#contactus", 1000, {easing: "easeInOutQuad"});
+  });
+  
+  $("#home-button").click(function() {
+  	$(document).scrollTo(0, 1000, {easing: "easeInOutQuad"});
+  });
+  
   // slider
   $("#backpics").responsiveSlides({
     speed: 2000,
