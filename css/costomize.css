@@ -1,13 +1,13 @@
 .logo span {
-	color: #777;
+	color: #02b8ef;
 }
 
 .banner h1 {
-	color: #777;
+	color: #999;
 }
 
 .banner h1 span {
-	color: #cd8;
+	color: #8a5;
 }
 
 .banner p {
@@ -15,7 +15,7 @@
 }
 
 #countdown .number {
-	color: #777;
+	color: #555;
 }
 
 #about .items .item i,
@@ -30,7 +30,7 @@
 }
 
 #progress #passed {
-	background-color: rgba(204,221,128, 0.7);
+	background-color: rgba(136,170,85, 0.7);
 }
 
 #about h1 {

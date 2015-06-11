@@ -92,5 +92,14 @@ $(document).ready(function() {
     speed: 2000,
     timeout: 5000
   });
+
+  // scroll animation
+  $("#about .items .item i").listenedByScroll("animated fadeInDown");
+  $("#about .items .item p").listenedByScroll("animated fadeInUp");
+  $("#subscribe .more-info p").listenedByScroll("animated fadeInUp");
+  $("#subscribe .form-wrapper").listenedByScroll("animated fadeInDown");
+  $("#form-wrapper").listenedByScroll("animated fadeInRight");
+  $("#contact-info > div").listenedByScroll("animated fadeInLeft");
+
 });
 
