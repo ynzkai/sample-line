@@ -182,7 +182,7 @@ body {
 /* progress */
 
 #progress {
-	height: 10px;
+	height: 30px;
 	margin: 10px auto;
 	position: relative;
 	background-color: rgba(125,125,125, 0.3);
@@ -202,6 +202,7 @@ body {
 	background-color: rgba(136,170,85, 0.7);
 	height: 100%;
 	width: 0;
+	opacity: 0.7;
 }
 
 #progress #persentage {
@@ -403,7 +404,7 @@ body {
 
 #subscribe .form-wrapper .desc {
 	margin: 50px auto 10px;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	color: #555;
 }
 
@@ -543,6 +544,7 @@ body {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 1em;
 	margin-top: 35px;
+	letter-spacing: 1px;
 	color: #999;
 }
 

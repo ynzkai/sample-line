@@ -1,77 +1,98 @@
+.facepage {
+	background-color: rgba(255, 255, 255, 0.7);
+	//background-color: rgba(0, 0, 0, 0.7);
+}
+
 .logo span {
-	color: #02b8ef;
+	font-family: 'Lobster', cursive;
+	color: #777;
 }
 
 .banner h1 {
-	color: #999;
-}
-
-.banner h1 span {
-	color: #8a5;
+	color: #777;
 }
 
 .banner p {
-	color: #999;
+	color: #777;
 }
 
 #countdown .number {
-	color: #555;
+	color: #45b97c;
 }
 
 #about .items .item i,
 #about .items .item img {
-	color: #cf8;
-	background-color: #f8f8f8;
-	border: 1px solid #eee;
+	color: #f3704b;
 }
 
 #about .items .item h2 {
 	color: #555;
 }
 
+#contactus #home-button:hover,
+#subscribe #contact-button:hover,
+#about #subscribe-button:hover {
+	background-color: #777;
+	border: 1px solid rgba(0, 0, 0, 0);
+}
+
+#subscribe .form-wrapper #submit:hover {
+	background-color: #ddd;
+	color: #f3704b;
+}
+
+/* same color */
+
+.banner h1 span {
+	color: #45b97c;
+}
+
 #progress #passed {
-	background-color: rgba(136,170,85, 0.7);
+	background-color: #45b97c; //rgba(136,170,85, 0.7);
 }
 
 #about h1 {
-	color: #555;
+	color: #45b97c;
 }
 
-#about .services .service h2 {
-	color: #555;
+#about .items .item h2 {
+	color: #45b97c;
+}
+
+#subscribe h1 {
+	color: #45b97c;
 }
 
 #contactus #home-button,
 #subscribe #contact-button,
 #about #subscribe-button {
-	color: #555;
-}
-
-#contactus #home-button:hover,
-#subscribe #contact-button:hover,
-#about #subscribe-button:hover {
-	background-color: #dfa;
-	border: 1px solid #dfa;
-}
-
-#subscribe h1 {
-	color: #555;
+	color: #45b97c;
 }
 
 #subscribe .form-wrapper #submit {
-	background-color: #dfa;
-	color: #555;
-}
-
-#subscribe .form-wrapper #submit:hover {
-	background-color: #ce9;
+	background-color: #f0f0f0;
+	color: #45b97c;
 }
 
 #contactus h1 {
-	color: #ccc;
+	color: #45b97c;
+}
+
+#contactus #contact-info h3 {
+	color: #45b97c;
 }
 
 #contactus #contact-info .sns span a:hover {
-	color: #dfa;
-	background-color: #999;
+	color: #45b97c;
+	background-color: #777;
+}
+
+#contactus #form-wrapper input#submit {
+	color: #45b97c;
+}
+
+/* progress bar height */
+
+#progress {
+	height: 10px;
 }

@@ -1,7 +1,18 @@
-// progress
 
+/* You can set the variables below to fit your website. */
+
+// start date
 var sStart = '2015/04/27';
+
+// end date
 var sEnd = '2015/06/27';
+
+
+
+
+
+/* Note: Modify the folowing code is not suggestion! */
+
 var dStart = new Date(sStart);
 var dEnd = new Date(sEnd);
 var total = dEnd-dStart;
@@ -56,7 +67,7 @@ $(document).ready(function() {
 	errorElement: "span",
 	messages: {
 	  email: {
-	  	required: " We need your email address to notify you."
+	  	required: " We need your email address."
 	  }
 	}
   });
@@ -98,8 +109,10 @@ $(document).ready(function() {
   $("#about .items .item p").listenedByScroll("animated fadeInUp");
   $("#subscribe .more-info p").listenedByScroll("animated fadeInUp");
   $("#subscribe .form-wrapper").listenedByScroll("animated fadeInDown");
-  $("#form-wrapper").listenedByScroll("animated fadeInRight");
-  $("#contact-info > div").listenedByScroll("animated fadeInLeft");
+  $("#contact-info .address").listenedByScroll("animated fadeInLeft");
+  $("#contact-info .telephone").listenedByScroll("animated fadeInLeft");
+  $("#contact-info .email").listenedByScroll("animated fadeInLeft");
+  $("#contact-info .sns").listenedByScroll("animated fadeInLeft");
 
 });
 
