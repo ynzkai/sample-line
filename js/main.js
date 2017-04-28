@@ -2,10 +2,10 @@
 /* You can set the variables below to fit your website. */
 
 // start date
-var sStart = '2015/04/27';
+var sStart = '2017/03/27';
 
 // end date
-var sEnd = '2015/06/27';
+var sEnd = '2017/09/27';
 
 
 
